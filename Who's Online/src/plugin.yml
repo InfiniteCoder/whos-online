@@ -1,0 +1,12 @@
+name: WhosOnline
+main: net.infinitecoder.whosonline.WhosOnline
+version: 0.1
+description: 'Who is on a server'
+author: InfiniteCoder
+commands:
+  setdata:
+    usage: |
+       /setdata <server name> <server address>
+       Example: /setdata Hypixel mc.hypixel.net
+    description: Set's server data
+    permission: whosonline.setdata
