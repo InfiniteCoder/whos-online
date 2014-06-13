@@ -4,8 +4,8 @@ Who's Online by InfiniteCoder
 Information
 ===========
 
-Bukkit Version: 1.7.2+
-Plugin Name: Who's Online
+Bukkit Version: 1.7.2+<br />
+Plugin Name: Who's Online<br />
 Plugin Author: InfiniteCoder
 
 Plugin Use
