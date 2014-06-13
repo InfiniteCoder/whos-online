@@ -1,7 +1,7 @@
 name: WhosOnline
 main: net.infinitecoder.whosonline.WhosOnline
-version: 0.1
-description: 'Who is on a server'
+version: 1.0
+description: 'Who is on servers'
 author: InfiniteCoder
 commands:
   setdata:

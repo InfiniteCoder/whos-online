@@ -38,20 +38,20 @@ public class WhosOnline extends JavaPlugin implements Listener {
 	@EventHandler
 	public void login(PlayerLoginEvent event) {
 		Object[] s = Request.sendLoginRequest(event.getPlayer());
-		logger.log((Level)s[0], "[Who's Online]" + s[1]);
+		logger.log((Level)s[0], "[Who's Online] " + s[1]);
 	}
 	
 	@EventHandler
 	public void logout(PlayerQuitEvent event) {
 		Object[] s = Request.sendLogoutRequest(event.getPlayer());
-		logger.log((Level)s[0], "[Who's Online]" + s[1]);
+		logger.log((Level)s[0], "[Who's Online] " + s[1]);
 	}
 	
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		if(!(sender instanceof ConsoleCommandSender)) {
 			sender.sendMessage("§a[Who's Online] §4Only console can perform this command!");
-			return false;
+			return true;
 		}
 		
 		if (cmd.getName().equalsIgnoreCase("setdata")) {

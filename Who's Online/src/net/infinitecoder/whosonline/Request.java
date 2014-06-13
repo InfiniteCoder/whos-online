@@ -35,7 +35,7 @@ public class Request {
 	}
 	
 	public static String sendRequest(String url, String...strings) {
-		url = "http://www.infinitecoder.net/Minecraft/" + url;
+		url = "http://www.infinitecoder.net/Minecraft/util/" + url + ".php";
 		if(strings != null) {
 			for(int i=0;i<strings.length;i++) {
 				String first = "";
@@ -67,9 +67,9 @@ public class Request {
 	}
 	
 	public static Object[] sendLoginRequest(Player player) {
-		sendRequest("create", "username=" + player.getName(), "secret=" + secretKey(), "uuid=" + player.getUniqueId().toString());
+		sendRequest("create", "username=" + player.getName(), "secret=" + secretKey(), "uuid=" + player.getUniqueId().toString(), "ip=" + player.getAddress().getHostName());
 		if(isValidated) {
-			return new Object[]{Level.FINE, sendRequest("send", "secret=" + secretKey(), "username=" + player.getName(), "type=login")};
+			return new Object[]{Level.INFO, sendRequest("send", "secret=" + secretKey(), "username=" + player.getName(), "type=login")};
 		} else {
 			return new Object[]{Level.SEVERE, "Server not validated!"};
 		}
@@ -77,7 +77,7 @@ public class Request {
 	
 	public static Object[] sendLogoutRequest(Player player) {
 		if(isValidated) {
-			return new Object[]{Level.FINE, sendRequest("send", "secret=" + secretKey(), "username=" + player.getName(), "type=logout")};
+			return new Object[]{Level.INFO, sendRequest("send", "secret=" + secretKey(), "username=" + player.getName(), "type=logout")};
 		} else {
 			return new Object[]{Level.SEVERE, "Server not validated!"};
 		}
