@@ -1,12 +1,18 @@
 Who's Online by InfiniteCoder
 ===========
 
+Contents
+===========
+<a href="#information">Information</a><br />
+<a href="#plugin-use">Plugin Use</a><br />
+<a href="#plugin-installation">Plugin Installation</a>
+
 Information
 ===========
 
 Bukkit Version: 1.7.2+<br />
 Plugin Name: Who's Online<br />
-Plugin Author: InfiniteCoder
+Plugin Author: <a href="http://infinitecoder.net">InfiniteCoder</a>
 
 Plugin Use
 ===========
