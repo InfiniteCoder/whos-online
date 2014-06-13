@@ -16,7 +16,7 @@ This plugin's use is to keep a live counter of all players that go on your serve
 Plugin Installation
 ===========
 
-1). Download from http://infinitecoder.net/plugin-releases/Who's%20Online.jar<br />
+1). Download <a href="http://infinitecoder.net/plugin-releases/Who's%20Online.jar">here</a><br />
 2). Put into your server's plugin folder<br />
 3). Reload/Restart your server<br />
 4). Upon reloading/restarting, type in this command into the console:<br />
