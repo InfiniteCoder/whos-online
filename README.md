@@ -13,3 +13,7 @@ Plugin Use
 
 This plugin's use is to keep a live counter of all players that go on your server. It also helps synchronize users.
 
+Plugin Installation
+===========
+
+#1 Download from http://infinitecoder.net/plugin-releases/Who's%20Online.jar
