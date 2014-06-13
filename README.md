@@ -12,7 +12,7 @@ Information
 
 Bukkit Version: 1.7.2+<br />
 Plugin Name: Who's Online<br />
-Plugin Author: <a href="http://infinitecoder.net">InfiniteCoder</a>
+Plugin Author: <a href="http://infinitecoder.net">InfiniteCoder</a><br />
 Plugin Version: 1.0
 
 Plugin Description
