@@ -28,7 +28,7 @@ Plugin Installation
 3). Reload/Restart your server<br />
 4). Upon reloading/restarting, type in this command into the console:<br />
     'setdata <server name> <server address>'<br />
-    for example: 'setdata Hypixel_Hub mc.hypixel.net'<br />
+    for example: 'setdata Hypixel_Hub mc.hypixel.net' (Note: use _ for spaces in titles.)<br />
 5). You're all set! When players join or leave your server, it'll be synchronized with the database.<br />
 
     To view your server, go to http://infinitecoder.net/Minecraft/<server address>
