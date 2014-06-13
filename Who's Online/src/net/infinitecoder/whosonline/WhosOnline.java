@@ -1,6 +1,5 @@
 package net.infinitecoder.whosonline;
 
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.bukkit.command.Command;
@@ -8,7 +7,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerLoginEvent;
+import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -36,15 +35,15 @@ public class WhosOnline extends JavaPlugin implements Listener {
 	}
 	
 	@EventHandler
-	public void login(PlayerLoginEvent event) {
-		Object[] s = Request.sendLoginRequest(event.getPlayer());
-		logger.log((Level)s[0], "[Who's Online] " + s[1]);
+	public void login(PlayerJoinEvent event) {
+		/*Object[] s = */Request.sendLoginRequest(event.getPlayer());
+		//logger.log((Level)s[0], "[Who's Online] " + s[1]);
 	}
 	
 	@EventHandler
 	public void logout(PlayerQuitEvent event) {
-		Object[] s = Request.sendLogoutRequest(event.getPlayer());
-		logger.log((Level)s[0], "[Who's Online] " + s[1]);
+		/*Object[] s = */Request.sendLogoutRequest(event.getPlayer());
+		//logger.log((Level)s[0], "[Who's Online] " + s[1]);
 	}
 	
 	@Override

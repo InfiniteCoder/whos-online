@@ -62,7 +62,7 @@ public class Request {
 	}
 	
 	public static String sendChangeRequest(String serverName, String serverAddress) {
-		sendRequest("update_server_info", "secret=" + secretKey(), "name=" + serverName, "ip=" + serverAddress);
+		sendRequest("update_server_info", "secret=" + secretKey(), "name=" + serverName.replaceAll("_", "+"), "ip=" + serverAddress);
 		return "Updated successfully";
 	}
 	
