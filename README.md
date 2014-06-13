@@ -13,8 +13,9 @@ Information
 Bukkit Version: 1.7.2+<br />
 Plugin Name: Who's Online<br />
 Plugin Author: <a href="http://infinitecoder.net">InfiniteCoder</a>
+Plugin Version: 1.0
 
-Plugin Use
+Plugin Description
 ===========
 
 This plugin's use is to keep a live counter of all players that go on your server. It also helps synchronize users.
